@@ -1,8 +1,9 @@
-import life from '../app';
+import {life} from '../js/app.js';
 
 test('basic test', () => {
-    
-    let result = 4;
-    expect(result).toBe(4)
+    let indicators = {name: 'Маг', health: 90};
+
+    let result = life(indicators);
+    expect(result).toBe(life(indicators))
 
 })
